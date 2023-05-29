@@ -1,0 +1,28 @@
+// не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
+// этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  font-style: #{$style};
+  font-weight: #{$weight};
+  font-family: $font_name;
+
+  font-display: swap;
+  src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+    url("../fonts/#{$file_name}.woff") format("woff");
+}
+
+@mixin fontOther($font_name, $file__direct, $file_name, $weight, $style) {
+  font-style: #{$style};
+  font-weight: #{$weight};
+  font-family: $font_name;
+
+  font-display: swap;
+  src: url("../fonts/#{$file__direct}/#{$file_name}.woff2") format("woff2"),
+    url("../fonts/#{$file__direct}/#{$file_name}.woff") format("woff");
+}

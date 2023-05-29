@@ -1,0 +1,80 @@
+.form-input {
+  width: 100%;
+  height: 48px;
+  padding: 13px 17px 10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: var(--font);
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  appearance: none;
+}
+
+.form-input[type="number"],
+.form-input[type="text"] {
+  appearance: textfield;
+}
+
+.form-input::-webkit-outer-spin-button,
+.form-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+
+  opacity: 1;
+}
+
+.form-input:hover {
+  background-color: #e6e6e6;
+  // border: 2px solid #e6e6e6;
+}
+
+.form-input:focus {
+  background-color: #e6e6e6;
+  // border: 2px solid #83b3d3;
+  // outline: 1px solid #83b3d3;
+  outline: none;
+  // outline: 3px solid #83b3d3;
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+// Текст введён,  курсор внутри поля
+// form-input:focus:not(:placeholder-shown)
+.form-input:focus:where(:not(:placeholder-shown)) {
+  background-color: #f2f2f2;
+  border-color: #000000;
+  box-shadow: none;
+}
+
+// .form-input:active {
+//   background-color: #f2f2f2;
+//   border: 2px solid #000000;
+// }
+
+// .form-input:user-invalid {
+//   border: 2px solid #ff5757;
+// }
+
+.form-input-disabled,
+.form-input:disabled {
+  opacity: 0.3;
+
+  pointer-events: none;
+}
+
+.form-input-valid {
+  background-color: #ffffff;
+  border: 2px solid #7db54f;
+}
+
+.form-input-error {
+  border: 2px solid #ff5757;
+}

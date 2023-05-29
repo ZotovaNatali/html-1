@@ -1,0 +1,30 @@
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: "";
+
+//   font-display: swap;
+//   src:
+//     url("../fonts/.woff2") format("woff2"),
+//     url("../fonts/.woff") format("woff");
+// }
+
+@font-face {
+  @include font("BebasNeue", BebasNeue-Regular, 400, normal);
+}
+
+@font-face {
+  @include font("BebasNeue", BebasNeue-Bold, 700, normal);
+}
+
+@font-face {
+  @include font("RobotoCondensed", RobotoCondensed, 400, normal);
+}
+
+@font-face {
+  @include font("RobotoCondensed", RobotoCondensed-Bold, 700, normal);
+}
+
+@font-face {
+  @include font("RobotoCondensed", RobotoCondensed-Light, 300, normal);
+}

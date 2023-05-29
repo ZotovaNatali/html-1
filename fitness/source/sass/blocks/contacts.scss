@@ -1,0 +1,264 @@
+.contacts {
+  background: linear-gradient(90deg, #102654 50%, #ffffff 49%);
+  border-top: 1px solid #74819c;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 21px;
+
+    background: none;
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 25px;
+  }
+}
+
+.contacts__container {
+  display: grid;
+  max-width: 1366px;
+
+  gap: 80px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $tablet) {
+    display: block;
+    padding: 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
+}
+
+.contacts__container-item {
+  padding: 70px 13% 40px;
+
+  @media (max-width: $tablet) {
+    padding: 70px 17.2% 42px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 70px 15px 38px;
+  }
+}
+
+.contacts__form {
+
+  // padding-right: 120px;
+
+  @media (max-width: $tablet) {
+    background-color: #102654;
+  }
+
+  @media (max-width: $mobile) {
+  }
+}
+
+.contacts h2 {
+  margin-bottom: 36px;
+
+  text-align: left;
+
+  @media (max-width: $tablet) {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  // @media (max-width: 768px) {
+  //   margin-left: 0;
+  // }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__form h2 {
+  color: #ffffff;
+}
+
+.contacts__form form {
+  display: grid;
+  max-width: 410px;
+
+  gap: 28px 30px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $tablet) {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-right: 28px;
+
+    gap: 28px 60px;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+    padding-right: 0;
+
+    gap: 31px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacts__form input {
+  padding: 6px 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+
+  &::placeholder {
+    color: #ffffff;
+
+    opacity: 1;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #ffffff;
+      outline: none;
+    }
+  }
+}
+
+.contacts__button {
+  padding: 16px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  grid-column: 1/-1;
+
+  @media (max-width: $tablet) {
+    border: 3px solid #ffffff;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 8px;
+  }
+}
+
+.contacts__info {
+  // padding-left: 120px;
+  color: #102654;
+
+  @media (max-width: $mobile) {
+  }
+}
+
+.contacts__info h2 {
+  margin-bottom: 40px;
+
+  text-align: left;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 37px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 39px;
+  }
+}
+
+.contacts__info-container {
+  display: grid;
+  padding-left: 3px;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $tablet) {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 0;
+
+    grid-template-columns: 265px 235px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: 0;
+
+    gap: 25px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacts__info h3 {
+  margin: 0 0 3px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.contacts__info p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.contacts__info a {
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+
+      outline: none;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__info-item + .contacts__info-item {
+  margin-top: 15px;
+
+  @media (max-width: $tablet) {
+    margin-top: 25px;
+  }
+}
+
+.contacts__item:nth-child(2n) {
+  padding-left: 62px;
+
+  border-left: 1px solid #74819c;
+
+  @media (max-width: $tablet) {
+    padding-left: 45px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: 0;
+
+    border: none;
+  }
+}

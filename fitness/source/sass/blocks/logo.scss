@@ -1,0 +1,24 @@
+.logo {
+  display: inline-block;
+  width: 89px;
+  height: 20px;
+
+  vertical-align: baseline;
+  color: #ffffff;
+
+  @media (max-width: $tablet) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 65px;
+    height: 15px;
+  }
+}
+
+.logo svg {
+  width: 100%;
+
+  fill: currentColor;
+}

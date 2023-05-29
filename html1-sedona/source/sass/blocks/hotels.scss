@@ -1,0 +1,185 @@
+.hotels {
+  padding: 0 70px;
+}
+
+.hotels-list {
+  display: grid;
+  padding-bottom: 40px;
+
+  border-bottom: 1px solid #e6e6e6;
+
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hotels-item {
+  display: grid;
+  padding: 20px;
+
+  gap: 16px 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hotels-img {
+  display: block;
+  height: 212px;
+
+  grid-column: 1/-1;
+}
+
+.hotels-img:hover {
+  opacity: 0.6;
+}
+
+.hotels-img:focus {
+  outline: 3px solid #83b3d3;
+  outline-offset: 2px;
+}
+
+.hotels-img:active {
+  opacity: 0.3;
+}
+
+.hotels-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hotels-title {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+
+  grid-column: 1/-1;
+}
+
+.hotels-text + .hotels-text {
+  text-align: right;
+}
+
+.hotels-favorites-active {
+  background-color: #7db54f;
+}
+
+.hotels-favorites-active:hover,
+.hotels-favorites-active:focus {
+  background-color: #6c9e42;
+}
+
+.hotels-favorites-active:active {
+  background-color: #7db54f;
+}
+
+.hotels-favorites-active-disabled,
+.hotels-favorites-active:disabled {
+  background-color: #e5e5e5;
+}
+
+.hotels-rating-star {
+  display: block;
+  height: 37px;
+
+  background-image: url("../img/icon-stars.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.hotels-rating-star-4 {
+  width: 90px;
+}
+
+.hotels-rating-star-3 {
+  width: 70px;
+}
+
+.hotels-rating-star-2 {
+  width: 50px;
+}
+
+.hotels-rating-text {
+  display: inline-block;
+  padding: 9px 10px 8px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 39px 0 60px;
+
+  gap: 8px;
+}
+
+.pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 5px;
+
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: var(--color-light);
+  border: 1px solid var(--color-light);
+  border-radius: 4px;
+}
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82b3d3;
+}
+
+.pagination-link-current {
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border-color: transparent;
+
+  pointer-events: none;
+}
+
+.pagination-link-more {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.pagination-link-more:focus {
+  background-color: transparent;
+  border-color: #68a2ca;
+}
+
+.pagination-link-more:hover,
+.pagination-link-more:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: transparent;
+  border-color: #68a2ca;
+}

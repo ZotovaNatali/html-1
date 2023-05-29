@@ -1,0 +1,33 @@
+// Vendor
+// ---------------------------------
+
+@import "./vendor/normalize.scss";
+
+// Global
+// ---------------------------------
+
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./global/fonts.scss";
+@import "./global/reboot.scss";
+@import "./global/utils.scss";
+@import "./global/container.scss";
+
+// Blocks
+// ---------------------------------
+
+@import "./blocks/button.scss";
+@import "./blocks/page-title-text.scss";
+@import "./blocks/form-input.scss";
+@import "./blocks/form.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/header.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/search.scss";
+@import "./blocks/filter.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/sorting.scss";
+@import "./blocks/hotels.scss";
+@import "./blocks/footer.scss";
+// ---------------------------------

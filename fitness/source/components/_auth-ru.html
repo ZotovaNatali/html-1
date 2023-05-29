@@ -1,0 +1,36 @@
+<section class="auth">
+  <div class="auth__content">
+    <h2 class="auth__title">Оставить заявку</h2>
+    <p class="auth__text">Пожалуйста, оставьте данные, и наш менеджер свяжется с Вами в ближайшее время</p>
+
+    <form class="auth__form" id="js-auth" method="POST" action="lib/php/sendmail.php">
+      <div class="auth__field-group">
+        <label class="auth__label" for="auth-login">Ваше имя</label>
+        <input class="auth__form-field js-auth-name" type="text" id="auth-name" name="Name" placeholder="John Smith" required>
+      </div>
+      <div class="auth__field-group">
+        <label class="auth__label" for="auth-phone">Телефон</label>
+        <input class="auth__form-field auth__form-field--imask js-auth-phone" id="auth-phone" name="Phone" type="text" placeholder="+" minlength="5" maxlength="25" autocomplete="off" required>
+      </div>
+      <div class="auth__field-group">
+        <label class="auth__label" for="auth-mail">Электронная почта</label>
+        <input class="auth__form-field js-auth-email" type="email" id="auth-mail" name="Email" placeholder="mail@gmail.com" maxlength="50" required>
+      </div>
+      <button class="button auth__submit" type="submit">Оставить заявку</button>
+    </form>
+  </div>
+
+  <div class="auth__message js-message-success">
+    <p class="auth__message-text">Ваша заявка успешно отправлена</p>
+  </div>
+
+  <div class="auth__message js-message-error">
+    <p class="auth__message-text">Произошла ошибка!</p>
+    <p class="auth__message-text">Перезагрузите страницу и&nbsp;попытайтесь отправить данные снова</p>
+  </div>
+  <div class="auth__preloader">
+    <svg fill="currentColor" viewbox="0 0 100 100" width="100" height="100" role="img" xmlns="http://www.w3.org/2000/svg" aria-label="Идет отправка.">
+      <use xlink:href="img/sprite.svg#icon-preload"></use>
+    </svg>
+  </div>
+</section>

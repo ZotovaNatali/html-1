@@ -1,0 +1,42 @@
+.social {
+  display: grid;
+
+  gap: 11px;
+  grid-template-columns: repeat(3, auto);
+
+  @media (max-width: $mobile) {
+    justify-content: start;
+    margin-top: 20px;
+
+    column-span: all;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+
+  color: #030a1a;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      outline: 0;
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link svg {
+  fill: currentColor;
+}

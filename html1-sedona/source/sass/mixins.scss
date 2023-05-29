@@ -1,0 +1,53 @@
+// не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
+// этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+// @include retina-bg("../img/header-bg", "png");
+@mixin retina-bg($img_path, $file_ext: "jpg") {
+  background-image: url("#{$img_path}.#{$file_ext}");
+
+  @supports (background-image: url("#{$img_path}.webp")) {
+    background-image: url("#{$img_path}.webp");
+  }
+
+  @supports (background-image: url("#{$img_path}.avif")) {
+    background-image: url("#{$img_path}.avif");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("#{$img_path}@2x.#{$file_ext}");
+
+    @supports (background-image: url("#{$img_path}@2x.webp")) {
+      background-image: url("#{$img_path}@2x.webp");
+    }
+
+    @supports (background-image: url("#{$img_path}@2x.avif")) {
+      background-image: url("#{$img_path}@2x.avif");
+    }
+  }
+}
+
+// @mixin retina-bg($bg, $ext: "jpg") {
+//   @supports not (background-image: url("../img/#{$bg}.webp")) {
+//     background-image: url("../img/#{$bg}.#{$ext}");
+//   }
+
+//   @supports (background-image: url("../img/#{$bg}.webp")) {
+//     background-image: url("../img/#{$bg}.webp");
+//   }
+
+//   @include retina {
+//     @supports not (background-image: url("../img/#{$bg}@2x.webp")) {
+//       background-image: url("../img/#{$bg}@2x.#{$ext}");
+//     }
+
+//     @supports (background-image: url("../img/#{$bg}@2x.webp")) {
+//       background-image: url("../img/#{$bg}@2x.webp");
+//     }
+//   }
+// }

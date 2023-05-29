@@ -1,0 +1,244 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 51px;
+
+  font-family: $ff-other;
+  color: #ffffff;
+
+  background: conic-gradient(
+    from 130.31deg at 16.03% 39.06%,
+    #b80027 -46.69deg,
+    #003d85 32.24deg,
+    #b80027 313.31deg,
+    #003d85 392.24deg
+  );
+
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 82px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 20px;
+    padding-bottom: 56px;
+  }
+}
+
+.header__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-bottom: -5px;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__phone {
+  display: inline-block;
+  margin-right: 20px;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  vertical-align: baseline;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      color: #003d85;
+
+      outline: none;
+    }
+  }
+}
+
+.header__content {
+  display: grid;
+
+  gap: 30px 64px;
+  grid-template-columns: 395px 500px 1fr;
+
+  @media (max-width: $tablet) {
+    padding-top: 23px;
+
+    gap: 30px 28px;
+    grid-template-columns: auto minmax(324px, 1fr);
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 25px;
+
+    grid-template-columns: 1fr;
+  }
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 116px;
+
+  @media (max-width: $tablet) {
+    padding-top: 52px;
+    padding-bottom: 23px;
+  }
+}
+
+.header__text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-content: start;
+
+  text-align: right;
+}
+
+.header__text span {
+  display: block;
+  width: 100%;
+
+  font-size: 49px;
+  line-height: 59px;
+  letter-spacing: 0.03em;
+
+  // grid-column: 1/-1;
+
+  @media (max-width: $tablet) {
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.header__text h1 {
+  // max-width: 235px;
+  margin: 8px 0 0;
+
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 0 rgb(255, 255, 255), 0 -1px 0 rgb(255, 255, 255),
+    1px 0 0 rgb(255, 255, 255), -1px 0 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
+
+  // grid-column: 3/-1;
+  // grid-row: 2/3;
+
+  @media (max-width: $tablet) {
+    margin-top: 5px;
+
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 9px;
+
+    font-size: 78px;
+    line-height: 78px;
+  }
+}
+
+.header__list {
+  margin-top: 130px;
+  margin-right: -33px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $ff-main;
+
+  // grid-column: 1/4;
+  // grid-row: 2/3;
+
+  @media (max-width: $tablet) {
+    margin-top: 93px;
+    margin-right: -22px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 87px;
+    margin-right: -36px;
+  }
+}
+
+.header__img {
+  max-width: 500px;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.header__img img {
+  @media (max-width: $tablet) {
+    height: 100%;
+  }
+}
+
+.header__buy {
+  width: 232px;
+  margin-top: 50px;
+  margin-left: auto;
+
+  @media (max-width: $tablet) {
+    width: 187px;
+    margin-top: 36px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    max-width: 300px;
+    margin: 40px auto 0;
+  }
+}
+
+.header__social {
+  margin: auto 0 38px auto;
+
+  text-align: right;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__social-item {
+  margin-top: 8px;
+}
+
+.header__social-link {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $ff-main;
+  color: #ffffff;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      color: #003d85;
+
+      outline: none;
+    }
+  }
+}

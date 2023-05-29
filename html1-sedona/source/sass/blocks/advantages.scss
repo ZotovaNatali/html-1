@@ -1,0 +1,145 @@
+// .advantages {
+//   padding-top: 20px;
+// }
+
+.description {
+  padding: 70px 70px 90px;
+}
+
+.description-services {
+  padding: 64px 70px 45px;
+}
+
+.description-title {
+  margin-bottom: 24px;
+}
+
+.description-services .description-title {
+  margin-bottom: 20px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-full {
+  width: 100%;
+
+  color: #ffffff;
+
+  background-color: var(--color-light);
+}
+
+.advantages-container {
+  display: flex;
+}
+
+.advantages-item:last-child .advantages-container {
+  flex-direction: row-reverse;
+}
+
+.advantages-content {
+  width: 400px;
+  min-height: 385px;
+  padding: 115px 85px 100px;
+}
+
+.advantages-item-full .advantages-content {
+  padding-top: 105px;
+}
+
+.advantages-title {
+  position: relative;
+
+  margin: 0 0 30px;
+  padding-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 60px;
+  height: 2px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
+}
+
+.advantages-container .advantages-title {
+  color: #ffffff;
+}
+
+.advantages-container .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-text {
+  margin: 0;
+}
+
+.advantages-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-item:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+.services-content {
+  width: 400px;
+  min-height: 385px;
+  padding: 184px 85px 20px;
+
+  background-repeat: no-repeat;
+  background-position: top 80px center;
+}
+
+.services-content .advantages-title {
+  padding-bottom: 0;
+}
+
+.services-content .advantages-title::after {
+  display: none;
+}
+
+.services-content-home {
+  background-image: url("../img/icon-house.svg");
+}
+
+.services-content-food {
+  background-image: url("../img/icon-food.svg");
+}
+
+.services-content-souvenirs {
+  background-image: url("../img/icon-souvenirs.svg");
+}

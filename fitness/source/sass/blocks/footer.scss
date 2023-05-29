@@ -1,0 +1,99 @@
+.footer {
+  padding-top: 41px;
+  padding-bottom: 43px;
+
+  background-color: #030a1a;
+
+  @media (max-width: $tablet) {
+    padding-top: 43px;
+    padding-bottom: 46px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+}
+
+.footer__container {
+  display: grid;
+  align-items: center;
+
+  gap: 100px;
+  grid-template-columns: auto 1fr auto;
+
+  @media (max-width: $tablet) {
+    padding: 0 40px;
+
+    gap: 25px;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+
+    column-count: 2;
+  }
+}
+
+.footer__logo {
+  @media (max-width: $tablet) {
+    margin-left: 5px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
+  }
+}
+
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-left: 6px;
+
+  @media (max-width: $tablet) {
+    padding-left: 10px;
+  }
+
+  @media (max-width: $mobile) {
+    justify-content: start;
+    padding-left: 0;
+  }
+}
+
+.footer__menu-item {
+  margin: 0 20px;
+
+  @media (max-width: $tablet) {
+    margin: 0 15px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    margin: 10px 0 5px;
+  }
+}
+
+.footer__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+
+      outline: 0;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
