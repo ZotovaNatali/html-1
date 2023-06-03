@@ -1,0 +1,74 @@
+.services {
+  padding: 15px 0 71px;
+
+  background: rgb(240, 240, 240);
+  background: linear-gradient(0deg, #f0f0f0 71%, #ffffff 71%);
+}
+
+.services-container {
+  display: grid;
+  align-self: start;
+
+  grid-template-columns: 287px 1fr;
+}
+
+.services-tabs {
+  display: grid;
+  align-content: center;
+
+  border-right: 7px solid #000000;
+
+  gap: 36px;
+  grid-template-columns: 1fr;
+}
+
+.services-tab-item-active {
+  background-color: #000000;
+}
+
+.services-tab-link {
+  width: 164px;
+  padding: 6px 7px 7px;
+}
+
+.services-tab-link-active {
+  color: #ffe17f;
+}
+
+.services-tab-link-active::before {
+  display: none;
+}
+
+// .services-contents {
+// }
+.services-content-item {
+  display: none;
+  padding: 74px 260px 74px 116px;
+
+  background-repeat: no-repeat;
+  background-position: center right 63px;
+}
+
+.services-content-item-delivery {
+  background-image: url("../img/svg/icon-services-delivery.svg");
+}
+
+.services-content-item-guarantee {
+  background-image: url("../img/svg/icon-services-guarantee.svg");
+}
+
+.services-content-item-credit {
+  background-image: url("../img/svg/icon-services-credit.svg");
+}
+
+.services-content-item-active {
+  display: block;
+}
+
+.services-title {
+  margin-bottom: 32px;
+}
+
+.services-text {
+  margin: 0;
+}

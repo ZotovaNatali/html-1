@@ -20,6 +20,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.hotels-item p {
+  margin: 0;
+}
+
 .hotels-img {
   display: block;
   height: 212px;
@@ -46,14 +50,33 @@
   height: 100%;
 }
 
+.hotels-link {
+  width: fit-content;
+
+  color: #000000;
+  text-decoration: none;
+
+  grid-column: 1/-1;
+}
+
+.hotels-link:hover {
+  opacity: 0.6;
+}
+
+.hotels-link:focus {
+  outline: 3px solid #83b3d3;
+  outline-offset: 2px;
+}
+
+.hotels-link:active {
+  opacity: 0.3;
+}
+
 .hotels-title {
   margin: 0;
 
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
-
-  grid-column: 1/-1;
 }
 
 .hotels-text + .hotels-text {

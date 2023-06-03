@@ -1,0 +1,70 @@
+.subscribe {
+  padding: 64px 0 56px;
+
+  background-color: #f0f0f0;
+}
+
+.subscribe-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 144px 52px;
+  align-items: center;
+}
+
+.subscribe-title {
+  grid-column: 1 / span 2;
+  padding-left: 7px;
+}
+
+.subscribe-text {
+  grid-column: span 2/-1;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column: 1 / span 3;
+  max-width: 810px;
+}
+
+// .subscribe-label {
+// }
+.subscribe-input {
+  display: block;
+  width: 100%;
+  padding: 10px 17px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-family: var(--font-rubik);
+  color: #444444;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #c4c4c4;
+}
+
+.subscribe-input::placeholder {
+  color: rgba(68, 68, 68, 0.5);
+
+  opacity: 1;
+}
+
+.subscribe-submit {
+  width: 252px;
+  padding: 15px;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.subscribe-note {
+  margin: 0 0 0 auto;
+  padding-left: 33px;
+
+  background-image: url("../img/svg/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+}

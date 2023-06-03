@@ -1,0 +1,48 @@
+.promo-block {
+  padding: 70px 0;
+}
+
+.promo-block-link {
+  position: relative;
+
+  display: block;
+  padding: 40px 125px 37px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: var(--font-raleway);
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+
+  background-color: #f0f0f0;
+}
+
+.promo-block-link::before,
+.promo-block-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+
+  width: 125px;
+  height: 100px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo-block-link::before {
+  left: 0;
+
+  background-color: #ffe17f;
+  background-image: url("../img/svg/icon-promo-delivery.svg");
+}
+
+.promo-block-link::after {
+  right: 0;
+
+  background-image: url("../img/svg/icon-promo-info.svg");
+}

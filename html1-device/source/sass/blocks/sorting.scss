@@ -1,0 +1,210 @@
+.sorting-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px 16px;
+}
+
+.select {
+  padding: 5px 40px 5px 5px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: var(--font-rubik);
+  color: #000000;
+
+  background-color: transparent;
+  background-image: url("../img/svg/icon-select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right 18px;
+  border: none;
+
+  appearance: none;
+}
+
+.sorting-dir {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: repeat(2, auto);
+}
+
+.sorting-dir-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/svg/icon-sort-up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sorting-dir-link-desc {
+  transform: rotate(180deg);
+}
+
+.sorting-body {
+  padding: 70px 40px 78px;
+
+  background-color: #ffffff;
+}
+
+.catalog-list {
+  display: grid;
+  margin-bottom: 45px;
+
+  gap: 43px 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-img {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.card-new .card-img::before {
+  content: "new";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  min-height: 60px;
+
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: var(--font-raleway);
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50px;
+}
+
+.card-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  display: none;
+
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.card-img-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+
+  display: none;
+
+  transform: translate(-50%, -50%);
+}
+
+.card-img:hover::after,
+.card-img:hover .card-img-btn {
+  display: block;
+}
+
+.card-descript {
+  display: grid;
+  align-items: start;
+
+  grid-template-columns: repeat(2, auto);
+}
+
+.card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.card-title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.card-price {
+  margin: 0;
+
+  line-height: 21px;
+
+  justify-self: end;
+}
+
+.catalog-more {
+  display: block;
+  margin-bottom: 44px;
+}
+
+.catalog-pagination {
+  display: grid;
+  align-items: center;
+
+  background-color: #ebebeb;
+
+  gap: 25px;
+  grid-template-columns: auto 1fr auto;
+}
+
+.pagination-btn {
+  display: inline-block;
+  padding: 25px 23px;
+
+  font-weight: 800;
+  line-height: 21px;
+  font-family: var(--font-raleway);
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
+.pagination-btn-disabled {
+  color: #444444;
+
+  opacity: 0.3;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.pagination-link {
+  display: inline-block;
+  padding: 5px;
+
+  color: #444444;
+  text-decoration: none;
+
+  opacity: 0.3;
+}
+
+.pagination-link-current {
+  opacity: 0.6;
+}
+
+.pagination-link-more {
+  padding: 5px 0;
+}

@@ -1,0 +1,19 @@
+.catalog {
+  background-color: #f0f0f0;
+}
+
+.catalog-container {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+}
+
+.catalog-title {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: var(--font-raleway);
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}

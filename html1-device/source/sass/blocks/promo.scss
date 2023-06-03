@@ -1,0 +1,145 @@
+// .promo {
+// }
+.promo-container {
+  position: relative;
+}
+
+.promo-list {
+  margin-bottom: 6px;
+
+  counter-reset: slider;
+}
+
+.promo-item {
+  position: relative;
+
+  display: none;
+
+  background: #ffe17f;
+  background: linear-gradient(180deg, #ffe17f 133px, #ffffff 133px);
+
+  counter-increment: slider;
+
+  gap: 40px;
+  grid-template-columns: auto 1fr;
+}
+
+.promo-item-active {
+  display: grid;
+}
+
+.promo-item:before {
+  content: "0" counter(slider);
+  position: absolute;
+  top: 65px;
+  right: 50px;
+
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.promo-img {
+  width: 560px;
+  height: 525px;
+}
+
+.promo-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.promo-content {
+  position: relative;
+  z-index: 1;
+
+  padding: 105px 0 20px;
+}
+
+.promo-title {
+  margin-bottom: 28px;
+}
+
+.promo-text {
+  margin: 0 0 42px;
+}
+
+.promo-button {
+  margin-bottom: 44px;
+}
+
+.promo-params {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+
+  gap: 21px;
+}
+
+.promo-params-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-key {
+  font-size: 16px;
+}
+
+.promo-value {
+  order: -1;
+  margin: 0 0 11px;
+
+  font-size: 36px;
+}
+
+.promo-arrows-container {
+  position: absolute;
+  top: 41%;
+  left: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 530px;
+
+  transform: translateY(-50%);
+}
+
+.promo-arrow {
+  width: 20px;
+  height: 60px;
+
+  background-color: transparent;
+  background-image: url("../img/svg/icon-slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+// .promo-arrow-prev {
+// }
+.promo-arrow-next {
+  transform: rotate(180deg);
+}
+
+.promo-bullets {
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.promo-bullets-btn {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 50px;
+}
+
+.promo-bullets-btn-active {
+  background-color: #000000;
+}

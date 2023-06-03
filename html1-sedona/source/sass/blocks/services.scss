@@ -1,0 +1,52 @@
+.services-description {
+  padding: 64px 70px 45px;
+}
+
+.services-description-title {
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-item:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+.services-content {
+  width: 400px;
+  min-height: 385px;
+  padding: 184px 85px 20px;
+
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: top 80px center;
+}
+
+.services-title {
+  margin: 0 0 30px;
+
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-content-home {
+  background-image: url("../img/icon-house.svg");
+}
+
+.services-content-food {
+  background-image: url("../img/icon-food.svg");
+}
+
+.services-content-souvenirs {
+  background-image: url("../img/icon-souvenirs.svg");
+}

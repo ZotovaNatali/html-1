@@ -1,0 +1,65 @@
+.categories {
+  padding: 68px 0;
+}
+
+// .categories-container {
+
+// }
+
+.categories-list {
+  display: grid;
+
+  gap: 40px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+// .categories__item {
+// }
+.categories-link {
+  position: relative;
+
+  display: block;
+  padding-top: 192px;
+
+  line-height: 24px;
+  font-family: var(--font-raleway);
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.categories-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: #ffe17f;
+  background-position: center;
+}
+
+.categories-link-vr::before {
+  background-image: url("../img/svg/icon-catalog-vr.svg");
+}
+
+.categories-link-selfi::before {
+  background-image: url("../img/svg/icon-catalog-selfi.svg");
+}
+
+.categories-link-camera::before {
+  background-image: url("../img/svg/icon-catalog-camera.svg");
+}
+
+.categories-link-fitness::before {
+  background-image: url("../img/svg/icon-catalog-fitness.svg");
+}
+
+.categories-link-smart::before {
+  background-image: url("../img/svg/icon-catalog-smart.svg");
+}
+
+.categories-link-quadcopters::before {
+  background-image: url("../img/svg/icon-catalog-quadcopters.svg");
+}

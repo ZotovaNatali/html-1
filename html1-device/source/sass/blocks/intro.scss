@@ -1,0 +1,43 @@
+.intro {
+  padding: 36px 0 29px;
+}
+
+.intro-container {
+  padding: 0 60px;
+}
+
+.intro-title {
+  margin-bottom: 10px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs-item {
+  position: relative;
+
+  margin-right: 36px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -21px;
+
+  width: 4px;
+  height: 7px;
+
+  background-image: url("../img/svg/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}

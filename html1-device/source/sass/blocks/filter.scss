@@ -1,0 +1,156 @@
+.filter {
+  padding: 12px 37px 5px 60px;
+}
+
+.filter-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.filter-group {
+  width: 200px;
+  margin: 0;
+  padding: 12px 0 33px;
+
+  border: none;
+  border-top: 2px solid #000000;
+}
+
+.filter-main-title {
+  margin-bottom: 58px;
+}
+
+.filter-title {
+  margin: 0 0 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.02em;
+}
+
+.range {
+  position: relative;
+
+  padding: 8px 0 35px;
+}
+
+.range-base {
+  position: relative;
+}
+
+.range-base::before,
+.range-base::after {
+  content: "";
+  position: absolute;
+  // top: 30px;
+
+  height: 2px;
+
+  background-color: #dcdcdc;
+}
+
+.range-base::before {
+  right: 0;
+  left: 0;
+}
+
+.range-base::after {
+  width: 119px;
+
+  background-color: #000000;
+}
+
+.range-content {
+  position: absolute;
+  top: -8px;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.range-content-min {
+  left: -14px;
+}
+
+.range-content-max {
+  right: 54px;
+}
+
+.range-btn {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 5px;
+  padding: 0;
+
+  background-color: #ebebeb;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.range-value {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-label {
+  display: grid;
+  align-items: center;
+
+  gap: 16px;
+  grid-template-columns: auto 1fr;
+}
+
+.filter-input {
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+  margin: 0;
+
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+
+  appearance: none;
+}
+
+.filter-input[type="radio"] {
+  border-radius: 50%;
+}
+
+.filter-input:checked {
+  border-color: #000000;
+}
+
+.filter-input[type="checkbox"]:checked {
+  background-image: url("../img/svg/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter-input[type="radio"]:checked:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filter-label-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.filter-submit {
+  padding: 11px 46px;
+}
