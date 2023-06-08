@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Device</title>
+
+  <link rel="preload" href="fonts/Raleway-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body no-js">
+  <header class="header">
+    <div class="header__container container">
+      <a class="header__logo logo" href="index.html" aria-current="page">
+        <img src="img/svg/logo.svg" width="140" height="70" alt="Логотип города Седона">
+        <span class="visually-hidden">Переход на главную страницу</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="stars">
+
+    </div>
+    <div class="stars-2">
+      <svg width="64" height="12" viewBox="0 0 64 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" />
+        <path d="M19 0L20.7634 3.57295L24.7063 4.1459L21.8532 6.92705L22.5267 10.8541L19 9L15.4733 10.8541L16.1468 6.92705L13.2937 4.1459L17.2366 3.57295L19 0Z" />
+        <path d="M32 0L33.7634 3.57295L37.7063 4.1459L34.8532 6.92705L35.5267 10.8541L32 9L28.4733 10.8541L29.1468 6.92705L26.2937 4.1459L30.2366 3.57295L32 0Z" />
+        <path d="M45 0L46.7634 3.57295L50.7063 4.1459L47.8532 6.92705L48.5267 10.8541L45 9L41.4733 10.8541L42.1468 6.92705L39.2937 4.1459L43.2366 3.57295L45 0Z" />
+        <path d="M58 0L59.7634 3.57295L63.7063 4.1459L60.8532 6.92705L61.5267 10.8541L58 9L54.4733 10.8541L55.1468 6.92705L52.2937 4.1459L56.2366 3.57295L58 0Z" />
+      </svg>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container container">
+
+    </div>
+  </footer>
+
+  <!-- Модальное окно -->
+  <!-- Класс modal--close закрывает модальное окно -->
+  <section class="modal modal-close">
+    <div class="modal-container">
+      <h2 class="modal-title title">Доставка под заказ</h2>
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <div class="modal-form">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form-group form-group-name">
+            <label class="form-label" for="user-name">Ваше имя:</label>
+            <input class="form-input form-input-name" id="user-name" name="username" type="text" placeholder="Введите имя" required>
+            <span class="form-message">Добавьте имя</span>
+          </div>
+          <div class="form-group form-group-email form-group-invalid">
+            <label class="form-label" for="user-email">Ваш e-mail:</label>
+            <input class="form-input form-input-email" id="user-email" name="usermail" type="email" value="почта" placeholder="Введите адрес электронной почты" required>
+            <span class="form-message form-message-error">Забавный у вас адрес</span>
+          </div>
+          <div class="form-group form-group-textarea">
+            <label class="form-label" for="user-comment">Что нужно привезти:</label>
+            <textarea class="form-input form-input-textarea" id="user-comment" name="comment" placeholder="В свободной форме" rows="1"></textarea>
+          </div>
+          <div class="form-group form-group-number">
+            <div class="form-tooltip">
+              <label class="form-label" for="user-quantity">Количество:</label>
+              <button class="form-tooltip-btn" type="button">
+                <span class="visually-hidden">Дополнительная информация</span>
+              </button>
+              <p class="form-tooltip-text" role="tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.</p>
+            </div>
+            <div class="form-controls">
+              <input class="form-input form-input-counter" id="user-quantity" name="quantity" type="number" min="1" max="999" step="1" value="1" required>
+              <button class="form-control form-control-step-down" type="button">
+                <span class="visually-hidden">Меньше</span>
+              </button>
+              <button class="form-control form-control-step-up" type="button">
+                <span class="visually-hidden">Больше</span>
+              </button>
+            </div>
+          </div>
+          <button class="form-submit button button-light" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
